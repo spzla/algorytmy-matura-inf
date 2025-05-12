@@ -5,8 +5,11 @@ def cezar(tekst: str, przes: int):
         szyfr += chr(nowa % 26 + ord('a'))
     return szyfr
 
+"""
+Wariant który zachowuje małe i duże litery
+"""
 def cezar_keepcase(tekst: str, przes: int):
-    szyfr = cezar(tekst, przes)
+    szyfr = cezar(tekst, przes) # W tym miejscu implementacja funkcji cezara
     nowy = ""
     for i in range(len(tekst)):
         if tekst[i].isupper():
@@ -15,4 +18,5 @@ def cezar_keepcase(tekst: str, przes: int):
             nowy += szyfr[i].lower()
     return nowy
 
-print(cezar_keepcase("ABC", -1))
+if __name__ == '__main__':
+    print(cezar_keepcase("AbC", 13))

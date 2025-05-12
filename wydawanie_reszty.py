@@ -36,7 +36,7 @@ def reszta2(n):
     return reszt
 
 """
-Z ciekawa
+Z funkcja divmod
 """
 def reszta_divmod(n):
     nominaly = [500, 200, 100, 50, 20, 10, 5, 2, 1]
@@ -51,3 +51,8 @@ def reszta_divmod(n):
         reszt.extend([nom] * ile)
 
     return reszt
+
+if __name__ == '__main__':
+    print(f"Reszta z 784: {reszta1(784)}")
+    print(f"Reszta z 1848: {reszta2(1848)}")
+    print(f"Reszta z 999: {reszta_divmod(999)}")

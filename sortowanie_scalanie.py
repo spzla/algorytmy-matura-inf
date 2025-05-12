@@ -36,9 +36,10 @@ def sortowanie_scalanie(arr: list, pom: list, lewy: int, prawy: int):
 
     scal(arr, pom, lewy, srodek, prawy)
 
-lista = [2, 5, 3, 0, 7, 1]
-pom = [0] * len(lista)
+if __name__ == '__main__':
+    lista = [2, 5, 3, 0, 7, 1]
+    pom = [0] * len(lista)
 
-sortowanie_scalanie(lista, pom, 0, len(lista) - 1)
+    sortowanie_scalanie(lista, pom, 0, len(lista) - 1)
 
-print(lista)
+    print(lista)

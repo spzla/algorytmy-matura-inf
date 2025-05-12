@@ -16,7 +16,8 @@ def insertion(arr: list):
             j -= 1
         arr[j + 1] = temp
 
-lista = [2, 5, 3, 0, 7, 1]
+if __name__ == '__main__':
+    lista = [2, 5, 3, 0, 7, 1]
 
-insertion(lista)
-print(lista)
+    insertion(lista)
+    print(lista)

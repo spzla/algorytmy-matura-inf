@@ -20,4 +20,5 @@ def fastpow_r(a, n):
     w = fastpow_r(a, n // 2)
     return w * w
 
-print(fastpow_r(3, 64))
+if __name__ == '__main__':
+    print(fastpow_r(3, 33))

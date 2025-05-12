@@ -12,4 +12,4 @@ def erastotenes(n):
 
     return w
 
-print(erastotenes(10000000))
+print("Pierwsze 100 liczb pierwszych:", erastotenes(100))

@@ -15,4 +15,5 @@ Możemy też sprawdzić pierwszość liczby po rozłożeniu jej na czynniki pier
 def czy_pierwsza_czynniki(n):
     return len(czynniki(n)) == 0
 
-print(czy_pierwsza_czynniki(91))
+if __name__ == '__main__':
+    print("91 pierwsza?", czy_pierwsza(91))

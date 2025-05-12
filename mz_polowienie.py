@@ -1,5 +1,6 @@
 def f(x):
-    return x**3 - 3*x**2 + 2*x-6
+    # x^3 - 3x^2 + 2x - 6
+    return x ** 3 - 3 * x ** 2 + 2 * x - 6
 
 def polowienie_i(a, b, epsilon):
     if f(a) == 0: return a
@@ -30,4 +31,5 @@ def polowienie_r(a, b, epsilon):
 
     return polowienie_r(srodek, b, epsilon)
 
-print(polowienie_r(-10, 10, 0))
+if __name__ == '__main__':
+    print(polowienie_r(-10, 10, 0))

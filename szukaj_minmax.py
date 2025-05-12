@@ -24,6 +24,8 @@ def szukaj(tab: list):
 
     return MIN, MAX
 
-lista = [2, 5, 3, 0, 7, 1]
+if __name__ == '__main__':
+    lista = [2, 5, 3, 0, 7, 1]
 
-print(szukaj(lista))
+    MIN, MAX = szukaj(lista)
+    print("Lista:", lista, f"\nmin: {MIN}\nmax: {MAX}")

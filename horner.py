@@ -9,3 +9,7 @@ def horner_i(wsp: list, st, x):
     for i in range(1, st + 1):
         wynik = wynik * x + wsp[i]
     return wynik
+
+if __name__ == '__main__':
+    print("x^3 - 6x + 13x - 12  dla x = 3: ", horner_r([1, -6, 13, -12], 3, 3))
+    print("x^3 - 6x + 13x - 12  dla x = 7: ", horner_r([1, -6, 13, -12], 3, 7))

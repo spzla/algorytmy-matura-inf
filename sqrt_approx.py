@@ -8,4 +8,6 @@ def asqrt(n, eps):
 
     return (a + b) / 2
 
-print(asqrt(64, 0.01))
+if __name__ == '__main__':
+    print("sqrt(978) ~=", asqrt(978, 0.01))
+    print("sqrt(64) ~=", asqrt(64, 0.01))
